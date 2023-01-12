@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- HEROVIRED name animation making -->
+    <style>
+        * {
+            background-color: lightgreen;
+        }
+
+        span {
+            width: 45px;
+            height: auto;
+            /* 4text-align: center; */
+            background-color: aliceblue;
+            /* 1justify-content: center; */
+            border-bottom: 5px solid orange;
+            /* 5color: blue; */
+            padding: 10px;
+            font-size: 60px;
+            animation: text 3s ease-in-out 0s infinite;
+            /* background-size: 20px; */
+        }
+
+        div {
+            /* 2width: auto; */
+            /* 3height: auto; */
+            display: flex;
+            margin-top: 50vh;
+            /* padding: 30px; */
+            /* border-bottom: 3px pink; */
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: blue;
+
+        }
+
+        @keyframes text {
+            0% {
+                transform: translateY(0);
+            }
+            30%{
+                transform: translate(0);
+                border-bottom: 5px solid blue;
+            }
+
+            50% {
+                transform: translateY(-50px);
+                border-bottom: 15px solid yellow;
+            }
+
+            100% {
+                transform: translateY(0);
+                border-bottom: 7px solid red;
+                border-top: 7px solid orange;
+            }
+        }
+
+        #a {
+            animation-delay: .1s;
+        }
+
+        #b {
+            animation-delay: .2s;
+        }
+
+        #c {
+            animation-delay: .3s;
+        }
+
+        #d {
+            animation-delay: .4s;
+        }
+
+        #e {
+            animation-delay: .5s;
+        }
+
+        #f {
+            animation-delay: .6s;
+        }
+
+        #g {
+            animation-delay: .7s;
+        }
+
+        #h {
+            animation-delay: .8s;
+        }
+
+        #i {
+            animation-delay: .9s;
+        }
+
+        #j {
+            animation-delay: .10s;
+        }
+
+        #k {
+            animation-delay: .11s;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="parents">
+        <span id="a">H</span>
+        <span id="b">E</span>
+        <span id="c">R</span>
+        <span id="d">O</span>
+        <span id="e">-</span>
+        <span id="f">V</span>
+        <span id="g">I</span>
+        <span id="h">R</span>
+        <span id="i">E</span>
+        <span id="j">D</span>
+    </div>
+</body>
+
+</html>

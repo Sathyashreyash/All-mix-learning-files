@@ -1,0 +1,38 @@
+/* body {
+    background-color: orange;
+    align-items: center;
+} */
+.intro.block{
+    background-image: url("photos./background-image");
+}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    /* margin: auto; */
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+table,
+td {
+
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+}
+
+#l1 {
+    color: blue;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.c1:hover {
+    color: brown;
+}

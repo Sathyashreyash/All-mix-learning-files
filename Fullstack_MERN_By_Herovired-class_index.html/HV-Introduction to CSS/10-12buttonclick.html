@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .cont {
+            height: 98vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image {
+            display: none;
+        }
+
+        button {
+            height: 100px;
+            width: 200px;
+            background-color: blueviolet;
+            font-size: 20px;
+            border-radius: 50px;
+            text-align: center;
+            margin: 50px;
+            animation: click alternate;
+        }
+
+        button:focus {
+            animation: click 2s linear infinite;
+        }
+
+        @keyframes click {
+            0% {
+                height: 100px;
+                width: 300px;
+                border-radius: 50px;
+            }
+
+            100% {
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                background-color: greenyellow;
+            }
+        }
+
+        button:focus img {
+            animation: opacity 1s 0.1s linear 1;
+        }
+
+        @keyframes opacity {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">
+        <span>Submit</span>
+        <img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62">
+    </button>
+
+</body>
+
+
+<!-- icon -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</body>
+</html>

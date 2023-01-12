@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firstweb.com-By Satnaik </title>
+    <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    #nav-bar {
+        display: flex;
+        width: 100%;
+        /* position: fixed; */
+        top: 0px;
+        justify-content: space-between;
+        text-align: center;
+        /* overflow: hidden; */
+        background-color: rgb(250, 228, 27);
+        /* background-image: url("./Image/Nature.image.jpg"); */
+    }
+
+    header>nav>img {
+        width: 250px;
+        height: 100px;
+    }
+
+    ul {
+        list-style: none;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .nav-link {
+        display: block;
+        text-align: center;
+        float: left;
+        padding: 10px 12px;
+        font-size: 17px;
+    }
+
+    /* #header{
+        display: flex;
+        height: 70px;
+      } */
+    .message-box {
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .message-box h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+
+    .message-box input {
+        display: block;
+        margin: auto;
+        width: 20%;
+        margin-bottom: 8px;
+    }
+
+    #submit {
+        background-color: orange;
+        padding: 5px 30px;
+        color: yellow;
+        font-size: 15px;
+        width: 15%;
+    }
+
+    #feature {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #features .feature {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        /* margin-bottom: 5px; */
+        width: 50%;
+        margin: 15px auto;
+    }
+
+    #features .feature i {
+        color: orange;
+    }
+
+    #feature .feature p {
+        font-size: medium;
+    }
+
+    #features .feature div h2 {
+        margin-bottom: 3px;
+        /* we can give also padding here */
+    }
+    #how-it-work{
+        padding: 30px;
+        margin: auto;
+        text-align: center;
+    }
+    #how-it-work #video{
+        width: 600px;
+        height: 150px;
+    }
+</style>
+
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <img id="header-img"
+                src="https://1000logos.net/wp-content/uploads/2020/03/United-Colors-of-Benetton-Logo-1977.png"
+                alt="logo">
+            <ul>
+                <a class="nav-link" href="#">Featuers</a>
+                <a class="nav-link" href="#">How it works</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Contact</a>
+            </ul>
+        </nav>
+    </header>
+    <div id="cantainer">
+        <section class="message-box">
+            <h1>Sample prodect for shopping</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                <input type="submit" id="submit" value="Get Started" clas="btn">
+            </form>
+        </section>
+
+        <section id="features">
+            <div class="feature">
+                <i class="fab fa-free-code-camp fa-3x"></i>
+                <div>
+                    <h2>quality products</h2>
+                    <p>Our products are of premium quality.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-shipping-fast fa-3x"></i>
+                <div>
+                    <h2>fast shopping</h2>
+                    <p>We make sure you receive your product timely. We also provide free returns
+                        if you are not satisfied.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-battery-full fa-3x"></i>
+                <div>
+                    <h2>quality Assurance</h2>
+                    <p>we will ensure there are no damages or faults </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-work">
+            <iframe id="video" src="https://www.youtube.com/embed/U_L9iW_-U4Q"> </iframe>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var str1 = 'Hello, This, is, a, Javascript, session';
+        var str2 = str1.split(",")
+        var str3 = 'Herovired';
+        var str4 = str3.split("");
+        var str5 = str2.join("");
+        str4.toString();
+        console.log(str4.toString());
+
+
+        // var str = "Herovired"
+        // var strr = "x"
+
+
+        //merging 2 arrays
+        var arr5 = [2, 3, 4, 5, 6, 7]
+        var arr6 = [10, 20, 30, 20, 40]
+        var arr7 = arr5.concat(arr6)
+        //concat is a non destructive method
+        console.log(arr7)
+        console.log(arr5)
+
+
+
+        //searching in an array
+        //indexOf method returns int value
+        console.log(arr6.indexOf(20))
+        console.log(arr6.lastIndexOf(20))
+        console.log(arr6.indexOf(201)); // if not found will return -1 
+
+
+        //includes
+        console.log(arr6.includes(20, 30))
+        // first index what to search and 2nd index starting index
+
+
+        //find returns only the first value
+        var ans3 = arr6.find(function (el) {
+            return el > 20;
+        })
+        console.log(ans3) //30
+
+        //filter //provides all the values according to the condition in form of array
+        var ans4 = arr6.filter(function (el) {
+            return el > 20;
+        });
+        console.log(ans4); //[30,40]
+
+
+
+    </script>
+</body>
+
+</html>
+
+qst//
+1.let strings = ["avengers", "captain america", "ironman", "black panther"];
+create an array where all these elements are stored in uppercase
+
+2.create an array from an a given array which contain only the even numbers using map,filter and reduce function

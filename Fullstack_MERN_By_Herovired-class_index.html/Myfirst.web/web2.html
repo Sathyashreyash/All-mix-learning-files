@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Website design by using HTML and CSS</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #header {
+        height: 100vh;
+        background-image: url(./img/officebg.img);
+        background-position: center;
+        background-size: cover;
+        font-family: sans-serif;
+    }
+
+    .container {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .logo {
+        margin-top: 30px;
+        width: 100px;
+    }
+
+    .header-text {
+        max-width: 350px;
+        margin-top: 140px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .square {
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        background: #f67c92;
+        margin: 15px 0;
+    }
+
+    .common-btn {
+        padding: 18px 40px;
+        background: transparent;
+        outline: none;
+        border: 2px solid #f67c92;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 18px;
+        color: #777;
+    }
+
+    .header-text button {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .line-1 {
+        width: 15px;
+        height: 15px;
+        background: skyblue;
+        display: inline-block;
+    }
+
+    .line-2 {
+        width: 80px;
+        height: 1px;
+        background: skyblue;
+        display: inline-block;
+    }
+
+    .line-3 {
+        width: 60px;
+        height: 1px;
+        background: skyblue;
+        display: inline-block;
+    }
+
+    .line {
+        line-height: 8px;
+    }
+
+    .sideNav {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background: #f67c92;
+        z-index: 2;
+        transition: .5s;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 50px 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #menuBtn {
+        width: 50px;
+        position: fixed;
+        right: 65px;
+        top: 35px;
+        z-index: 2;
+        cursor: pointer;
+    } 
+</style>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="./img/sk.logo.jpg" class="logo">
+            <div class="header-text">
+                <h1> Lorem ipsum dolor <br>sit amet consectetur elit.</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae voluptatum, exercitationem
+                    neque quis mollitia saepe. Unde esse tempora facere.</p>
+                <button class="common-btn">Read More..</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="sideNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Offer</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="./img/menulogo.jpg" id="menuBtn">
+
+    <!-- <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>

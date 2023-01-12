@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Animation task</title>
+    <style>
+        * {
+            background-color: blueviolet;
+         }
+
+        span {
+            width: 40px;
+            height: 40px;
+            background-color: salmon;
+            border-bottom: 2px solid white;
+            padding-top: 20px;
+            animation: text 3s ease-in-out 0s infinite;
+        
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: greenyellow;
+            margin-top: 45vh;
+            animation: text 3s ease-in-out 0s infinite;
+        }
+
+        @keyframes text {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-50px);
+                border-bottom: 10px solid yellow;
+            }
+
+            100% {
+                transform: translateY(0);
+                border-bottom: 3px solid red;
+            }
+        }
+
+        #a {
+            animation-delay: .1s;
+        }
+
+        #b {
+            animation-delay: .2s;
+        }
+
+        #c {
+            animation-delay: .3s;
+        }
+
+        #d {
+            animation-delay: .4s;
+        }
+
+        #e {
+            animation-delay: .5s;
+        }
+
+        #f {
+            animation-delay: .6s;
+        }
+
+        #g {
+            animation-delay: .7s;
+        }
+
+        #h {
+            animation-delay: .7s;
+        }
+
+        #i {
+            animation-delay: .6s;
+        }
+
+        #j {
+            animation-delay: .5s;
+        }
+
+        #k {
+            animation-delay: .4s;
+        }
+
+        #l {
+            animation-delay: .3s;
+        }
+
+        #m {
+            animation-delay: .2s;
+        }
+
+        #n {
+            animation-delay: .1s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="parent">
+        <span ID="a">S</span>
+        <span ID="b">A</span>
+        <span ID="c">T</span>
+        <span ID="d">A</span>
+        <span ID="e">N</span>
+        <span ID="f">A</span>
+        <span ID="g">I</span>
+        <span ID="h">K</span>
+        <span ID="i">K</span>
+        <span ID="j">A</span>
+        <span ID="k">M</span>
+        <span ID="l">B</span>
+        <span ID="m">L</span>
+        <span ID="n">E</span>
+    </div>
+</body>
+
+</html>

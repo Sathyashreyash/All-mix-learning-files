@@ -1,0 +1,33 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+   text-align: center;
+   color: red;
+   text-transform: capitalize;
+}
+.k1:hover{
+    color: orchid;
+    text-decoration: underline;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+}
+table td{
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+
+#m1{
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}
+td.q1:hover{
+    color: red;
+    /* text-decoration-color: brown; */
+ }    

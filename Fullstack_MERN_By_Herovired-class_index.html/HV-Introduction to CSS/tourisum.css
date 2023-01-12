@@ -1,0 +1,58 @@
+body {
+    background-color: aqua;
+}
+/* selector {declaration}
+        proprty : value; */
+
+  h1 {
+        text-align: center;
+  }       
+
+  img {
+        display:block;
+        margin:auto;
+        width: 500px;
+        height: 100px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  #s1 {
+        color: orangered;
+  }
+
+  .k1 {
+        text-decoration: underline;
+  }
+
+  h1, p {
+        text-transform: uppercase; /*  Grouping selector = capitalize. lowercase we can use it */
+  }
+
+  .r1 {
+        float: left;
+        margin: 130px;
+
+  }
+
+  span {
+        color: rgb(226, 17, 45);
+        background-color: rgb(207, 228, 21);
+  }
+  #b1 {
+        clear: both;
+        background-color: blueviolet;
+
+  }
+  
+  #u1 {
+        font-size: 50;
+        text-align: left;
+  }
+
+  table {
+        
+  }
+

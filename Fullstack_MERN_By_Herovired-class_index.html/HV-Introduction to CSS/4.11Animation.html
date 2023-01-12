@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            height: 400px;
+        }
+        .aa{
+        margin: 100px;
+        width:100px;
+        height:100px;
+        position:relative;
+        background-color: blueviolet;
+        animation-name: sample;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation-timing-function:ease-in ;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode:forwards;
+        animation-play-state: running;
+        }
+        @keyframes sample{
+        0% {
+           left:0;
+           top:0%; 
+           
+         } 
+        25%{
+          left:50%;
+          background-color: yellow;
+         } 
+         50%{
+            top:50%;
+            left:50%;
+            background-color: orange;
+         } 
+         100%{
+            
+            top:50%;
+            left:0%;
+            background-color: red;
+        
+         }
+        }
+        .ball{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            animation: ball 2s infinite;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        @keyframes ball{
+            0%, 50%, 100%{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(100px);
+            }
+            60%{
+                transform: translateY(30px);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="aa"></div>
+    <div class="ball"></div>
+</body>
+
+</html>
